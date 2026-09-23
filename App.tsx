@@ -12,7 +12,6 @@ import Footer from './components/Footer';
 import ProjectModal from './components/ProjectModal';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import OfflineIndicator from './components/OfflineIndicator';
-import GoogleSlidesSection from './components/GoogleSlidesSection';
 import StickyNavIndicator from './components/StickyNavIndicator';
 import { Project } from './types';
 import { LanguageProvider, useLanguage } from './contexts/LanguageContext';
@@ -300,7 +299,6 @@ const AppContent: React.FC = () => {
                 <ExperienceSection />
                 <EducationSection />
                 <WorksSection projects={projectsData} onProjectClick={handleProjectClick} />
-                <GoogleSlidesSection />
                 <ContactSection />
             </main>
 

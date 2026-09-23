@@ -197,7 +197,7 @@ export async function saveLocalMediaFile(file: File): Promise<{
             localStorage.setItem(`media-meta-${mediaId}`, JSON.stringify({
                 name: file.name,
                 type: isVideo ? 'video' : 'image',
-                format: getMediaFormat(file.name, file.type),
+                format: getMediaFormat(file.name, isVideo ? 'video' : 'image'),
                 size: file.size,
                 savedAt: Date.now()
             }));

@@ -6,7 +6,6 @@ import {
     Briefcase, 
     GraduationCap, 
     Palette, 
-    Presentation, 
     Mail, 
     ChevronLeft, 
     ChevronRight,
@@ -24,7 +23,6 @@ export const SECTION_IDS = [
     'experience',
     'education',
     'works',
-    'slides',
     'contact'
 ] as const;
 
@@ -50,7 +48,6 @@ const StickyNavIndicator: React.FC<StickyNavIndicatorProps> = ({
         { id: 'experience', label: t.menu.experience, icon: Briefcase },
         { id: 'education', label: t.menu.education, icon: GraduationCap },
         { id: 'works', label: t.menu.works, icon: Palette },
-        { id: 'slides', label: t.menu.slides, icon: Presentation },
         { id: 'contact', label: t.menu.contact, icon: Mail },
     ], [t]);
 

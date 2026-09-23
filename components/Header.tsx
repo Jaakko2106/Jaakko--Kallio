@@ -129,7 +129,6 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle, isMenuOpen, theme, onThem
                     { id: 'experience', label: t.menu.experience },
                     { id: 'education', label: t.menu.education },
                     { id: 'works', label: t.menu.works },
-                    { id: 'slides', label: t.menu.slides },
                     { id: 'contact', label: t.menu.contact },
                 ].map(item => {
                     const isActive = activeSection === item.id;
